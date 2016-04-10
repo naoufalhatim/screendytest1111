@@ -11,9 +11,7 @@ var port     = process.env.PORT || 8080;
 // configuration ===============================================================
 //MongoClient.connect("mongodb://appharbor_hg7nqv6q:c418cb4e24vj3vdqd8g72b08bh@ds013310.mlab.com:13310/appharbor_hg7nqv6q", function(err, database)
 //MongoClient.connect("mongodb://appharbor_64v0nrc6:fdmoda9lh21hu2g7cc9jnbulgr@ds013280.mlab.com:13280/appharbor_64v0nrc6", function(err, database)
-
 MongoClient.connect("mongodb://naoufal:naoufal@ds019980.mlab.com:19980/naoufal", function(err, database)
-
 {
 if(err) throw err;
 db = database;
