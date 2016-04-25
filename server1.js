@@ -46,6 +46,9 @@ app.post('/addUser', function(req, res){
 	);
 });
 
+
+
+
 //modifier un utilisateur
 app.post('/editEmailofUsername', function(req, res){
 	db.collection('User').updateOne(
