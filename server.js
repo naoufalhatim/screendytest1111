@@ -48,10 +48,10 @@ app.post('/addUser', function(req, res){
 
 
 //----------------------------------------------------------------
-db.collection("User").authenticate('user', 'name', function(err, result) {
+/*db.collection("User").authenticate('user', 'name', function(err, result) {
       assert.equal(true, result);
 };
-      
+  */    
 //___________________________________________________________________
 
 
