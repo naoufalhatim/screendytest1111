@@ -20,7 +20,7 @@ console.log('Example app listening on port' + port);
 });
 });
 app.get('/', function (req, res) {
-res.json({ message: 'my first screendy test' });
+res.json({ message: 'my first screendy testt' });
 });
 app.get('/Users', function (req, res)
 {
@@ -55,7 +55,7 @@ app.get('/login', function(req, res){
   res.render('login');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
 });                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         
-.post('/login', function(req, res) {
+app.post('/login', function(req, res) {
 
 	// find the user
 	User.findOne({
