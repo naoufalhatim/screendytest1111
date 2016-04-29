@@ -49,44 +49,6 @@ app.post('/addUser', function(req, res){
 
 //----------------------------------------------------------------
 
-
-
-app.get('/login', function(req, res){                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
-  res.render('login');                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  
-});                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
-app.post('/login', function(req, res) {
-
-	// find the user
-	User.findOne({
-		name: req.body.name
-	}, function(err, user) {
-
-		if (err) throw err;
-
-		if (!user) {
-			res.json({ success: false, message: 'Authentication failed. User not found.' });
-		} else if (user) {
-
-			// check if password matches
-			if (user.password != req.body.password) {
-				res.json({ success: false, message: 'Authentication failed. Wrong password.' });
-			} else {
-			res.json({ message: 'auth true' });
-				});
-
-				res.json({
-					success: true,
-					message: 'Enjoy your token!',
-				
-				});
-			}		
-
-		}
-
-	});
-
-
 //___________________________________________________________________
 
 
