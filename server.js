@@ -78,14 +78,14 @@ app.post('/login', function(req, res) {
 				res.json({
 					success: true,
 					message: 'Enjoy your token!',
-					token: token
+				
 				});
 			}		
 
 		}
 
 	});
-});
+
 
 //___________________________________________________________________
 
